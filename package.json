@@ -1,0 +1,12 @@
+{
+  "name": "leaderboad-guess-my-name",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node ./server.mjs"
+  },
+  "dependencies": {
+    "ws": "^8.16.0"
+  }
+}
