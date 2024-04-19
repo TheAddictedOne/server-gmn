@@ -23,12 +23,12 @@ wss.on('connection', (ws) => {
         ws.send(JSON.stringify({ response: 'listen' }))
         break
 
-      case 'change':
+      case 'update':
         leaderboards.forEach((leaderboard) => {
           leaderboard.send(JSON.stringify({
-            response: 'notif',
+            response: 'update',
             uuid: json.uuid,
-            tierlist: json.tierlist,
+            tierList: json.tierList,
           }))
         })
         break
